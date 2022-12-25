@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop- Büşra Diba Aktaş</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--content-start-->
+    <div class="min-w-screen min-h-screen bg-gray-900 px-5 py-5 text-fuchsia-800">
+      <!--header-->
+      <h4 class="text-amber-100 font-thin">HABERLER.COM</h4>
+      <!--list-->
+      <ul class="list-disc">
+        <li>
+          <a href="" class="underline-offset-4 text-blue-400">Anasayfa</a>
+        </li>
+        <li>
+          <a href="" class="underline-offset-4 text-violet-400">Ekonomi</a>
+        </li>
+        <li>
+          <a href="" class="underline-offset-4 text-green-400">Siyaset</a>
+        </li>
+        <li><a href="" class="underline-offset-4 text-gray-400">Magazin</a></li>
+        <li><a href="" class="underline-offset-4 text-indigo-400">Spor</a></li>
+      </ul>
+      <!--header-two-->
+      <h3 class="text-black font-bold bg-red-400 px-1 my-4">ANASAYFA</h3>
+      <!--header-three-->
+      <h4 class="text-blue-800 font-bold bg-orange-400 px-1 my-4">
+        Kullanıcı Kayıt Formu
+      </h4>
+
+      <form class="mb-1">
+        <label class="" for="fname"
+          ><span class="bg-orange-400 text-amber-100 font-medium px-2"
+            >İSİM:</span
+          ></label
+        >
+        <input type="text" id="fname" name="fname" /><br />
+      </form>
+      <form class="mb-1" action="">
+        <label for="fname"
+          ><span class="bg-red-800 text-amber-100 font-medium px-2"
+            >Şifre:</span
+          ></label
+        >
+        <input type="password" id="pword" name="pword" /><br />
+      </form>
+      <label>Cinsiyet:</label>
+      <select>
+        <option value="Kadın">Kadın</option>
+        <option value="Erkek">Erkek</option>
+      </select>
+    </br>
+  </br>
+    
+    <p>Sevdiğiniz Araba Markaları:</p>
+    <select size="5">
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Tofaş">Tofaş</option>
+      <option value="Renault">Renault</option>
+      <option value="Tesla">Tesla</option>
+    </select>
+
+    </br>
+  </br>
+    <p>Görüş ve Önerileriniz:</p>
+
+    <textarea name="message" rows="5" cols="50"></textarea>
+
+    </br>
+    <div class="inline-flex">
+      <div class="border-2 w-[70px] border-b border-gray-900 bg-white flex align-items justify-center mr-3 text-black">
+              <button id="subtraction" class="operator">Kaydet</button>
+            </div>
+         <div class="border-2 w-[80px] border-b border-gray-900 bg-white flex align-items justify-center text-black">
+              <button id="subtraction" class="operator">Kaydedin</button>
+            </div>
+    </div>
+  </br>
+</br>
+    <span>Copyright &copy; Büşra Aktaş</span>
+      <!--content-end-->
+      <div
+      class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10"
+    >
+      <div>
+        <a
+          title="GitHub"
+          href="https://github.com/bsrakts"
+          target="_blank"
+          class="block w-32 h-12 rounded-full transition-all shadow-lg shadow-violet-500/50 hover:shadow-lg transform hover:scale-110 hover:rotate-2 font-normal bg-violet-500 text-sky-300 flex items-center justify-center"
+        >
+          Show Code
+        </a>
+      </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

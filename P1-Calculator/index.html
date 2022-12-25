@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adolfha Calculator</title>
+    <style>
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+    </style>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      @layer utilities {
+        .operator {
+          @apply w-full h-16 outline-none focus:outline-none hover:bg-violet-700 hover:bg-opacity-30 text-sky-100 text-opacity-90 text-xl font-normal;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--content-start-->
+    <div
+      class="min-w-screen min-h-screen bg-sky-100 flex items-center justify-center px-5 py-5"
+    >
+      <div
+        class="w-full mx-auto rounded-xl border-1 border-gray-500/50 shadow-lg shadow-violet-500/50 text-gray-800 relative overflow-hidden"
+        style="max-width: 300px"
+      >
+        <!--result-start-->
+        <div
+          class="w-full h-40 bg-gradient-to-b from-gray-900 to-gray-700 flex items-end text-right"
+        >
+          <!--result-text-start-->
+          <div
+            id="result"
+            class="w-full py-5 px-6 text-6xl text-white font-thin"
+          >
+            0
+          </div>
+          <!--result-text-end-->
+        </div>
+        <!--result-end-->
+        <!--operator-start-->
+        <div class="w-full bg-gradient-to-b from-violet-500 to-indigo-700">
+          <!--first-line-start-->
+          <div class="flex w-full">
+            <div class="border-r w-2/4 border-b border-indigo-400">
+              <button id="clear" class="operator">C</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button id="addition" class="operator">+</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button id="subtraction" class="operator">-</button>
+            </div>
+          </div>
+          <!--second-line-start-->
+          <div class="flex w-full">
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">7</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">8</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">9</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button id="multiply" class="operator">*</button>
+            </div>
+          </div>
+          <!--third-line-start-->
+          <div class="flex w-full">
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">4</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">5</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">6</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button id="divide" class="operator">/</button>
+            </div>
+          </div>
+          <!--fourth-line-start-->
+          <div class="flex w-full">
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">1</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">2</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">3</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">%</button>
+            </div>
+          </div>
+          <!--fifth-line-start-->
+          <div class="flex w-full">
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">0</button>
+            </div>
+            <div class="border-r w-1/4 border-b border-indigo-400">
+              <button class="operator">.</button>
+            </div>
+            <div class="border-r w-2/4 border-b border-indigo-400">
+              <button id="equal" class="operator">=</button>
+            </div>
+          </div>
+        </div>
+        <!--operator-end-->
+      </div>
+    </div>
+    <!--content-end-->
+
+    <div
+      class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10"
+    >
+      <div>
+        <a
+          title="Buy me a beer"
+          href="https://www.buymeacoffee.com/scottwindon"
+          target="_blank"
+          class="block w-32 h-12 rounded-full transition-all shadow-lg shadow-violet-500/50 hover:shadow-lg transform hover:scale-110 hover:rotate-2 font-normal bg-violet-500 text-sky-300 flex items-center justify-center"
+        >
+          Show Code
+        </a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
