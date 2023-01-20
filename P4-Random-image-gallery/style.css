@@ -1,0 +1,32 @@
+*{
+    box-sizing : border-box;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:60vh;
+    margin:0;
+    font-family:sans-serif;
+    background-color:cornflowerblue;
+}
+
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.content img{
+    object-fit:cover;
+    margin:10px;
+    height:300px;
+    width:300px;
+    max-width:100%;
+    border:1px solid transparent;
+    border-radius:50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
